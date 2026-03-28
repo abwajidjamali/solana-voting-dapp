@@ -1,6 +1,3 @@
-#![allow(unexpected_cfgs)]
-#![allow(deprecated)]
-
 use anchor_lang::prelude::*;
 
 declare_id!("9fRWQFyfPvsnrTNo6oYP3aZnu1rf13Wj4nb5qqc1o5YP");
@@ -116,7 +113,7 @@ pub mod voting {
     }
 }
 
-// ─── Accounts ────────────────────────────────────────────────────────────────
+// Accounts structs for each instruction
 
 #[derive(Accounts)]
 #[instruction(poll_id: u64)]
@@ -176,7 +173,7 @@ pub struct ClosePoll<'info> {
     pub authority: Signer<'info>,
 }
 
-// ─── State ───────────────────────────────────────────────────────────────────
+// State structs for Poll and VoterRecord
 
 #[account]
 pub struct Poll {
@@ -223,7 +220,7 @@ impl VoterRecord {
     pub const SPACE: usize = 8 + 32 + 8 + 1 + 8;
 }
 
-// ─── Errors ──────────────────────────────────────────────────────────────────
+// Custom error codes for the voting program
 
 #[error_code]
 pub enum VotingError {

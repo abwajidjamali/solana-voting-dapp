@@ -63,7 +63,7 @@ describe("voting", () => {
     }
   }
 
-  // ── 1. Initialization ─────────────────────────────────────────────────────
+  // Initialization tests
 
   describe("Poll Initialization", () => {
     it("creates a poll with correct state", async () => {
@@ -106,7 +106,7 @@ describe("voting", () => {
     });
   });
 
-  // ── 2. Voting ─────────────────────────────────────────────────────────────
+  // Voting tests
 
   describe("Voting", () => {
     const VOTE_POLL = new BN(200);
@@ -161,7 +161,7 @@ describe("voting", () => {
     });
   });
 
-  // ── 3. Poll Management ────────────────────────────────────────────────────
+  // Poll management tests
 
   describe("Poll Management", () => {
     const MGMT_POLL = new BN(300);
@@ -206,7 +206,7 @@ describe("voting", () => {
     });
   });
 
-  // ── 4. Results ────────────────────────────────────────────────────────────
+  // Results tests
 
   describe("Results", () => {
     const RESULT_POLL = new BN(400);
