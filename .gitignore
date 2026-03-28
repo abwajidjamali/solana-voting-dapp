@@ -5,3 +5,9 @@ target
 node_modules
 test-ledger
 .yarn
+
+target/
+node_modules/
+test-ledger/
+
+*.json
