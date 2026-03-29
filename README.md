@@ -1,4 +1,4 @@
-# 🗳️ Solana Voting dApp
+# Solana Voting dApp
 
 A decentralized voting application built on Solana using the Anchor framework. Polls and votes are stored fully on-chain, and the PDA based voter record prevents any wallet from voting twice.
 
@@ -11,6 +11,10 @@ A decentralized voting application built on Solana using the Anchor framework. P
 - **Transaction Signature:** `4JsJBumvibU6yscdbqNNSLoFXB334mupLrbyqGKLd57CWDYbi23US3RzPzpiK9u1dk2MT3u1rGzBUnyc4quVX2Qz`
 
 View on Explorer: https://solscan.io/tx/4JsJBumvibU6yscdbqNNSLoFXB334mupLrbyqGKLd57CWDYbi23US3RzPzpiK9u1dk2MT3u1rGzBUnyc4quVX2Qz?cluster=devnet
+
+## Test Results:
+
+![Successful Tests](assets/test-result.png)
 
 ## Features
 
@@ -150,7 +154,3 @@ await program.methods.castVote(pollId, 0).accounts({ poll, voterRecord, voter: p
 | `Unauthorized` | Only the poll authority can do this |
 
 ---
-
-## License
-
-MIT
