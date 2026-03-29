@@ -4,11 +4,19 @@ A decentralized voting application built on Solana using the Anchor framework. P
 
 ---
 
+## Deployment (Devnet)
+
+- **Program ID:** `9fRWQFyfPvsnrTNo6oYP3aZnu1rf13Wj4nb5qqc1o5YP`
+- **Network:** `Devnet`
+- **Transaction Signature:** `4JsJBumvibU6yscdbqNNSLoFXB334mupLrbyqGKLd57CWDYbi23US3RzPzpiK9u1dk2MT3u1rGzBUnyc4quVX2Qz`
+
+View on Explorer: https://solscan.io/tx/4JsJBumvibU6yscdbqNNSLoFXB334mupLrbyqGKLd57CWDYbi23US3RzPzpiK9u1dk2MT3u1rGzBUnyc4quVX2Qz?cluster=devnet
+
 ## Features
 
 | Feature | Details |
 |---|---|
-| Create polls | Title, description, 2–10 candidates, start/end timestamps |
+| Create polls | Title, Description, Start/end timestamps |
 | Cast votes | One vote per wallet per poll (enforced by PDA seeds) |
 | Close / Reopen polls | Authority-only admin actions |
 | Read results | Any client can fetch live vote counts and determine winner |
@@ -79,7 +87,7 @@ anchor test                          # spins up its own validator
 
 ---
 
-## Deployment (Devnet)
+## Deployment Guide
 
 ```bash
 # Switch to devnet
